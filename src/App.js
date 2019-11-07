@@ -10,8 +10,7 @@ const App = () => {
   const saveTask = (e) => {
     if (e.key === 'Enter' && taskValue) {
       let newTask = {id: idGen('task-'), text: taskValue, status: 'pending',}
-      let newTodo = [newTask, ...todoList];
-      setTodoList(newTodo);
+      setTodoList([newTask, ...todoList]);
       setTaskValue('')
     }
   }
