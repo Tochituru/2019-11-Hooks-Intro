@@ -1,9 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-function App() {
+import { CssBaseline, Container, Button, TextField, Modal } from '@material-ui/core';
+
+
+const App = () => {
+  const [taskValue, setTaskValue] = useState()
   return (
-    <div className="App">'Hola'
-    </div>
+    <Container>
+      <h1>To Do List </h1>
+      <CssBaseline />
+      <TextField
+        value={taskValue}
+        label={'Ingresa tarea'}
+        name={'task'}
+        onChange={(e) => setTaskValue(e.target.value)}
+        variant='outlined'
+      />
+    </Container>
   );
 }
 

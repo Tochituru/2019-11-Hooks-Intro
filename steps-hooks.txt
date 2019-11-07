@@ -1,0 +1,35 @@
+Con Hooks voy a trabajar con funciones, que son mucho más performantes que las clases porque voy a traer las cosas especificas que necesito en un momento dado, en vez del bodoque de un class component.
+
+Es probable que un class component sea con lo que más trabajemos.
+
+Es importante no mezclar un proyecto con class componentes y hooks.
+
+1. Vamos a tomar el todo-list ABM completo con class components.
+
+    Tenemos que aprender a resolver con Hooks dos temas principales:
+
+    A. El estado y su manejo.
+    B. Los eventos de life cycle.
+
+2. Voy a instalar material-ui:
+        npm install @material-ui/core
+
+3. Voy a instalar node-sass para (una línea de) css:
+    npm install node-sass
+
+4. Tomo los material-ui del proyecto anterior,  y voy a traer los pedacitos del estado (Hooks):
+    {useSate} from react
+
+5. Agregamos esta línea de código:
+      const [taskValue, setTaskValue] = useState()
+
+    Estamos destructurando una lista que viene como resultado de la función useState.
+    Me devuelve una dupla: el primero es un conjunto de valores y el segundo es una función que lo modifica, por eso lo llamamos de esa manera: XValue setXValue.
+
+    Si lo comparamos a class componentes, el primero sería el state y el segundo this.setState.
+ 
+6. Agregamos el input (material ui: textfield)
+En el Value, vamos a agregar el value.
+En el onChange, vamos a agregar setTaskValue.
+
+[31:25]

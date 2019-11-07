@@ -1,0 +1,28 @@
+Programación funcional
+	Funciones puras: 
+		Siempre la misma respuesta a x entrada de datos.
+		Si yo tengo una función (como double), siempre que yo le de un mismo parámetro, me dará el mismo resultado (si 
+		Si yo le paso un objecto con ciertas propiedades, me devolverá el mismo objeto con el mismo cambio.
+		
+	Closure:
+		La forma en que una función puede acceder a datos que no le son explícitamente datos,sino que los recibe por contexto.
+		Por ejemplo,
+			let base = 2;
+			let num = 2;
+			const multiply = () => num * base
+		
+		Aunque multiply usa num y base, no le digo qué es num ni base, sino que le digo que lo use. Lo puede utilizar porque ambas variables están en contexto donde vive la aplicación. La función está al mismo nivel que el scope de las variables.
+		"La capacidad que tienen las funciones de conocer datos que no les son dados explícitamente, sino que viven en su contexto".
+		
+		
+
+Paradigma de programación
+	Nos proponen una metodología para desarrollar nuestra aplicación. Es tan general que en concepto que alcanzan para un proyecto.
+¿Cuándo ponerlo en práctica? 
+	Cuando conceptualizamos el proyecto y a lo largo del desarrollo.
+	Requiere cierto grado de planificación.
+	Pueden darse casos en los que cambia el paradigma (de OOP a FP) y tiene un costo importante.
+	Es ideal mantener un mismo paradigma.
+	Lo más normal es que las herramientas que elijamos nos guíen en ese paradigma.
+	Si trabajamos con Hooks, estaremos encaminadas a trabajar de manera funcional.
+	
