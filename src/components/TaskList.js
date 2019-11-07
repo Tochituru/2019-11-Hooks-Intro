@@ -7,9 +7,12 @@ const TaskList = ({ data, changeStatus, tag, title, deleteTask, editTask }) => {
 			<h2>{title}</h2>
 			{data.map((e, i) => (
 				<ListItem button key={i}>
-					<ListItemText>
+					<ListItemText onClick={() => changeStatus(e.id)}>
 						{tag} {e.text}
 					</ListItemText>
+					<Button variant={'contained'} onClick={() => deleteTask(e.id)}>
+						x
+					</Button>
 				</ListItem>
 			))}
 		</List>

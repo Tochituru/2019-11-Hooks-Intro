@@ -25,4 +25,6 @@ Paradigma de programación
 	Es ideal mantener un mismo paradigma.
 	Lo más normal es que las herramientas que elijamos nos guíen en ese paradigma.
 	Si trabajamos con Hooks, estaremos encaminadas a trabajar de manera funcional.
+
+	[01:20:]
 	
