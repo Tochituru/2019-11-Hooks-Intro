@@ -27,9 +27,9 @@ Es importante no mezclar un proyecto con class componentes y hooks.
     Me devuelve una dupla: el primero es un conjunto de valores y el segundo es una función que lo modifica, por eso lo llamamos de esa manera: XValue setXValue.
 
     Si lo comparamos a class componentes, el primero sería el state y el segundo this.setState.
+
+    Siempre conviene inicializar el estado, aunque sea como vacío.
  
 6. Agregamos el input (material ui: textfield)
 En el Value, vamos a agregar el value.
 En el onChange, vamos a agregar setTaskValue.
-
-[31:25]
